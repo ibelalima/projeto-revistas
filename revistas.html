@@ -4,93 +4,13 @@
   <meta charset="UTF-8">
   <title>Revistas com Iframe</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Playfair Display', serif;
-    }
-
-    table {
-      border-collapse: collapse;
-    }
-
-    .main-layout {
-      width: 100%;
-      height: 100vh;
-    }
-
-    .sidebar {
-      background-color: #1c022f;
-      color: white;
-      width: 250px;
-      vertical-align: top;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .sidebar h1 {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 30px;
-    }
-    .menu {
-      width: 100%;
-      text-align: center;
-    }
-    .menu a {
-      display: block;
-      background-color: #e793fc;
-      color: black;
-      text-decoration: none;
-      padding: 12px 0;
-      margin: 5px auto;
-      width: 90%;
-      text-align: center;
-      border: 1px solid rgb(234, 222, 222);
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-      font-weight: bold;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
-
-    .menu a:hover {
-      background-color: #9c74fb;
-    }
-
-    .content {
-      background: linear-gradient(to bottom, #ccc, #888);
-      text-align: center;
-    }
-
-    .iframe-wrapper {
-      margin: 30px auto;
-      border: 4px solid rgb(0, 0, 0);
-      background-color: rgb(249, 244, 244);
-      width: 350px;
-    }
-
-    .iframe-wrapper thead th {
-      background-color: rgb(114, 26, 122);
-      color: white;
-      font-size: 22px;
-      padding: 10px 0;
-      border: 1px solid rgb(240, 240, 240);
-    }
-
-    .iframe-wrapper iframe {
-      width: 100%;
-      height: 560px;
-      border: none;
-      
-    }
-
-  </style>
+  <link rel="stylesheet" href="css/revistas.css">
 </head>
 <body>
   <table class="main-layout">
     <tr>
       <td class="sidebar">
-        <h1>Frame 1</h1>
+        <h1>Menu de Revistas</h1>
         <table class="menu">
           <tr><td><a href="revistas/revista1.html" target="revista">Primeira Revista</a></td></tr>
           <tr><td><a href="revistas/revista2.html" target="revista">Segunda Revista</a></td></tr>
@@ -111,7 +31,7 @@
           <tbody>
             <tr>
               <td>
-                <iframe name="revista" src="capa.html" ></iframe>
+                <iframe name="revista" src="capa.html"></iframe>
               </td>
             </tr>
           </tbody>
@@ -121,5 +41,3 @@
   </table>
 </body>
 </html>
-
-
