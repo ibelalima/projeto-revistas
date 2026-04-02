@@ -87,7 +87,7 @@ body {
     padding: 40px;
     display: flex;
     justify-content: center;
-    background: radial-gradient(circle, #1c022f 0%, #0a011a 100%);
+    background: linear-gradient(rgba(10, 1, 26, 0.8), rgba(10, 1, 26, 0.8)), url(../monster/wallpapermonsterhighclub31.jpg)
 }
 
 .revista-section {
@@ -119,12 +119,23 @@ main:has(section:target:not(#capa)) #capa {
     max-width: 500px;
 }
 
-.img-destaque, .img-revista {
-    max-width: 100%;
-    height: auto;
+.img-destaque {
+    max-width:100%;
+    height: auto; /* Mantemos auto apenas para o banner principal, que é diferente das capas */
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.img-revista {
+    width: 320px;           /* Largura fixa para todas */
+    height: 450px;          /* Altura fixa (padrão de revista) */
+    object-fit: cover;      /* Corta as sobras sem distorcer o desenho */
+    object-position: top;   /* Mantém o topo (título da revista) visível */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border: 2px solid #e793fc; /* Um contorno para dar acabamento */
 }
 
 .btn-ler {

@@ -32,9 +32,10 @@ header p {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 0 20px;
+    background: linear-gradient(rgba(10, 1, 26, 0.8), rgba(10, 1, 26, 0.8)), url(../monster/wallpapermonsterhighclub31.jpg)
 }
 
 h2.section-title {
